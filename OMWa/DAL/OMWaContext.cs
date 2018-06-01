@@ -21,9 +21,9 @@ namespace OMWa.DAL
         }
         
 
-        public virtual Departments Departments { get; set; }
-        public virtual Employees Employees { get; set; }
-        public virtual Managers Managers { get; set; }
+        public virtual DbSet<Departments> Departments { get; set; }
+        public virtual DbSet<Employees> Employees { get; set; }
+        public virtual DbSet<Managers> Managers { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -32,16 +32,10 @@ namespace OMWa.DAL
             builder.Entity<OMWaUsers>(c => c.ToTable("User"));
             builder.Entity<OMWaRoles>(c => c.ToTable("Roles"));
 
-            /*builder.Entity<IdentityUser>(c =>
-            {
-                c.ToTable("User");
-                c.HasKey(x => x.Id);
-            });
-            builder.Entity<IdentityRole>(c =>
-            {
-                c.ToTable("Roles");
-                c.HasKey(x => x.Id);
-            });*/
+            builder.Entity<Employees>(c => c.HasKey(x => x.JobId));
+            builder.Entity<Managers>(c => c.HasKey(x => x.JobId));
+            builder.Entity<Departments>(c => c.HasKey(x => x.DepartmentId));
+          
 
             builder.Entity<IdentityUserRole<string>>(c => {
                 c.ToTable("UserRoles");

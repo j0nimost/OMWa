@@ -11,9 +11,10 @@ using System;
 namespace OMWa.Migrations
 {
     [DbContext(typeof(OMWaContext))]
-    partial class OMWaContextModelSnapshot : ModelSnapshot
+    [Migration("20180601142713_Employee-and-Manager-PKey")]
+    partial class EmployeeandManagerPKey
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

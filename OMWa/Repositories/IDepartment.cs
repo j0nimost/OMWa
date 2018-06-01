@@ -8,6 +8,8 @@ namespace OMWa.Repositories
 {
     public interface IDepartment: IRepository<Departments>
     {
+
+        Task Remove(Guid Id);
         Task<Departments> Get(Guid Id);
         Task<ICollection<Departments>> Get();
     }
