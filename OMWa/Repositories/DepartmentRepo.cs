@@ -8,6 +8,9 @@ using OMWa.Models;
 
 namespace OMWa.Repositories
 {
+    /// <summary>
+    /// Department Repository: CRUD Operations
+    /// </summary>
     public class DepartmentRepo : IDepartment
     {
         private OMWaContext context;
