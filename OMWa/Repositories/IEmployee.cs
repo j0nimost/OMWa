@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OMWa.Repositories
 {
-    public interface IDepartment: IRepository<Departments>
+    public interface IEmployee: IRepository<Employees>
     {
     }
 }

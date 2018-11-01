@@ -5,10 +5,12 @@ using System.Threading.Tasks;
 
 namespace OMWa.Repositories
 {
-    public interface IRepository<in T>
+    public interface IRepository<T>
     {
-        Task Add(T entity);
-        Task Update(T entity);
-        Task Remove(Guid Id);
+        Task<T> Get(Guid Id);
+        Task<IEnumerable<T>> GetAll();
+        void AddItem(T entity);
+        void Update(T entity);
+        void Remove(T entity);
     }
 }
