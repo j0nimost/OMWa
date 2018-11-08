@@ -1,4 +1,3 @@
-﻿using Microsoft.AspNetCore.Identity;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -6,7 +5,10 @@ using System.Threading.Tasks;
 
 namespace OMWa.Models
 {
-  public class OMWaRoles : IdentityRole<Guid>
+  public enum RolesEnum
   {
+    User=1,
+    Manager,
+    Admin
   }
 }

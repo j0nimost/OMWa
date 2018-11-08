@@ -15,6 +15,10 @@ namespace OMWa.Models
     /// </summary>
     public class OMWaUsers: IdentityUser<Guid>
     {
+        public RolesEnum Role { get; set; }
+        public string JobTitle { get; set; }
+        public string JobRole { get; set; }
+        public byte[] ProfileImage { get; set; }
         public DateTime DOJ { get; set; }
     }
 }

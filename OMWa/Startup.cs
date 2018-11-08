@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using OMWa.DAL;
+using OMWa.Repositories;
 
 namespace OMWa
 {
@@ -24,7 +25,13 @@ namespace OMWa
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<OMWaContext>(options => options.UseNpgsql(Configuration.GetConnectionString("omwa")));
-
+            services.AddSingleton<OMWaContext>();
+            
+            services.AddScoped<IEmployee, EmployeesRepo>();
+            services.AddScoped<IManagers, ManagersRepo>();
+            services.AddScoped<IDepartment, DepartmentsRepo>();
+            services.AddScoped<IUnitofWork, UnitofWork>();
+            //
             services.AddMvc();
         }
 
