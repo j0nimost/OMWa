@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -23,7 +23,7 @@ namespace OMWa
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<OMWaContext>(options => options.UseSqlite(Configuration.GetConnectionString("Sqlite")));
+            services.AddDbContext<OMWaContext>(options => options.UseNpgsql(Configuration.GetConnectionString("omwa")));
 
             services.AddMvc();
         }

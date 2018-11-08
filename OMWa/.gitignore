@@ -5,6 +5,9 @@
 /tmp
 /out-tsc
 
+#App Secrets
+appsettings.json
+*.lock
 # dependencies
 /node_modules
 

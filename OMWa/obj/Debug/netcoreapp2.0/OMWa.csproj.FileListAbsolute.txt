@@ -9,3 +9,14 @@ C:\Users\j0nimost\source\repos\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.AssemblyIn
 C:\Users\j0nimost\source\repos\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.AssemblyInfo.cs
 C:\Users\j0nimost\source\repos\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.dll
 C:\Users\j0nimost\source\repos\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.pdb
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.dll
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.pdb
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\bin\Debug\netcoreapp2.0\OMWa.deps.json
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\bin\Debug\netcoreapp2.0\OMWa.runtimeconfig.json
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\bin\Debug\netcoreapp2.0\OMWa.runtimeconfig.dev.json
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\bin\Debug\netcoreapp2.0\OMWa.dll
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\bin\Debug\netcoreapp2.0\OMWa.pdb
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.csprojAssemblyReference.cache
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.csproj.CoreCompileInputs.cache
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.AssemblyInfoInputs.cache
+C:\Users\J0nimost\Documents\Projects\OMWa\OMWa\obj\Debug\netcoreapp2.0\OMWa.AssemblyInfo.cs
