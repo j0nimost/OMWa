@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -31,7 +32,9 @@ namespace OMWa
             services.AddScoped<IManagers, ManagersRepo>();
             services.AddScoped<IDepartment, DepartmentsRepo>();
             services.AddScoped<IUnitofWork, UnitofWork>();
-            //
+            //add Automapper
+
+            services.AddAutoMapper();
             services.AddMvc();
         }
 
